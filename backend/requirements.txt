@@ -1,0 +1,7 @@
+# Pinned so the saved .pkl model loads exactly as it was trained.
+flask==3.1.3
+flask-cors==6.0.5
+pandas==3.0.6
+numpy==2.5.3
+scikit-learn==1.9.1
+joblib==1.6.0

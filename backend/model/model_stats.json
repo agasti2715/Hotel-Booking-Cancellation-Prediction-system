@@ -1,0 +1,306 @@
+{
+  "dataset": {
+    "total_bookings": 119208,
+    "cancelled": 44198,
+    "cancel_rate": 37.1,
+    "avg_lead_time": 104.1,
+    "avg_adr": 101.93,
+    "by_hotel": [
+      {
+        "label": "City Hotel",
+        "bookings": 79162,
+        "cancel_rate": 41.8
+      },
+      {
+        "label": "Resort Hotel",
+        "bookings": 40046,
+        "cancel_rate": 27.8
+      }
+    ],
+    "by_deposit": [
+      {
+        "label": "Refundable",
+        "bookings": 162,
+        "cancel_rate": 22.2
+      },
+      {
+        "label": "No Deposit",
+        "bookings": 104460,
+        "cancel_rate": 28.4
+      },
+      {
+        "label": "Non Refund",
+        "bookings": 14586,
+        "cancel_rate": 99.4
+      }
+    ],
+    "by_lead_time": [
+      {
+        "label": "0-7 days",
+        "bookings": 19635,
+        "cancel_rate": 9.6
+      },
+      {
+        "label": "8-30 days",
+        "bookings": 18945,
+        "cancel_rate": 27.9
+      },
+      {
+        "label": "31-90 days",
+        "bookings": 29528,
+        "cancel_rate": 37.7
+      },
+      {
+        "label": "91-180 days",
+        "bookings": 26420,
+        "cancel_rate": 44.7
+      },
+      {
+        "label": "181-365 days",
+        "bookings": 21533,
+        "cancel_rate": 55.5
+      },
+      {
+        "label": "365+ days",
+        "bookings": 3147,
+        "cancel_rate": 67.7
+      }
+    ],
+    "by_special_requests": [
+      {
+        "label": "0",
+        "bookings": 70199,
+        "cancel_rate": 47.8
+      },
+      {
+        "label": "1",
+        "bookings": 33183,
+        "cancel_rate": 22.0
+      },
+      {
+        "label": "2",
+        "bookings": 12952,
+        "cancel_rate": 22.1
+      },
+      {
+        "label": "3+",
+        "bookings": 2874,
+        "cancel_rate": 16.8
+      }
+    ],
+    "by_market_segment": [
+      {
+        "label": "Online TA",
+        "bookings": 56408,
+        "cancel_rate": 36.8
+      },
+      {
+        "label": "Offline TA/TO",
+        "bookings": 24181,
+        "cancel_rate": 34.3
+      },
+      {
+        "label": "Direct",
+        "bookings": 12582,
+        "cancel_rate": 15.4
+      },
+      {
+        "label": "Corporate",
+        "bookings": 5282,
+        "cancel_rate": 18.8
+      },
+      {
+        "label": "Groups",
+        "bookings": 19790,
+        "cancel_rate": 61.1
+      },
+      {
+        "label": "Complementary",
+        "bookings": 728,
+        "cancel_rate": 12.2
+      },
+      {
+        "label": "Aviation",
+        "bookings": 235,
+        "cancel_rate": 22.1
+      }
+    ],
+    "by_month": [
+      {
+        "label": "January",
+        "bookings": 5921,
+        "cancel_rate": 30.5
+      },
+      {
+        "label": "February",
+        "bookings": 8052,
+        "cancel_rate": 33.4
+      },
+      {
+        "label": "March",
+        "bookings": 9766,
+        "cancel_rate": 32.2
+      },
+      {
+        "label": "April",
+        "bookings": 11078,
+        "cancel_rate": 40.8
+      },
+      {
+        "label": "May",
+        "bookings": 11780,
+        "cancel_rate": 39.7
+      },
+      {
+        "label": "June",
+        "bookings": 10929,
+        "cancel_rate": 41.5
+      },
+      {
+        "label": "July",
+        "bookings": 12644,
+        "cancel_rate": 37.5
+      },
+      {
+        "label": "August",
+        "bookings": 13861,
+        "cancel_rate": 37.8
+      },
+      {
+        "label": "September",
+        "bookings": 10500,
+        "cancel_rate": 39.2
+      },
+      {
+        "label": "October",
+        "bookings": 11147,
+        "cancel_rate": 38.1
+      },
+      {
+        "label": "November",
+        "bookings": 6771,
+        "cancel_rate": 31.3
+      },
+      {
+        "label": "December",
+        "bookings": 6759,
+        "cancel_rate": 35.0
+      }
+    ],
+    "by_guest_type": [
+      {
+        "label": "First-time guest",
+        "bookings": 115454,
+        "cancel_rate": 37.8
+      },
+      {
+        "label": "Repeated guest",
+        "bookings": 3754,
+        "cancel_rate": 14.7
+      }
+    ],
+    "satisfaction_by_customer_type": [
+      {
+        "label": "Group",
+        "score": 64.2
+      },
+      {
+        "label": "Transient",
+        "score": 60.5
+      },
+      {
+        "label": "Contract",
+        "score": 59.9
+      },
+      {
+        "label": "Transient-Party",
+        "score": 57.2
+      }
+    ]
+  },
+  "model": {
+    "selected": "Gradient Boosting",
+    "unique_rows": 87228,
+    "train_rows": 69782,
+    "test_rows": 17446,
+    "features": 20,
+    "comparison": [
+      {
+        "accuracy": 77.58,
+        "precision": 70.97,
+        "recall": 31.36,
+        "f1": 43.5,
+        "roc_auc": 78.48,
+        "name": "Logistic Regression",
+        "train_seconds": 0.2
+      },
+      {
+        "accuracy": 81.03,
+        "precision": 73.41,
+        "recall": 48.75,
+        "f1": 58.59,
+        "roc_auc": 84.87,
+        "name": "Random Forest",
+        "train_seconds": 3.4
+      },
+      {
+        "accuracy": 80.94,
+        "precision": 71.97,
+        "recall": 50.37,
+        "f1": 59.27,
+        "roc_auc": 84.78,
+        "name": "Gradient Boosting",
+        "train_seconds": 1.0
+      }
+    ],
+    "confusion_matrix": {
+      "true_confirmed": 11702,
+      "false_cancelled": 942,
+      "false_confirmed": 2383,
+      "true_cancelled": 2419
+    },
+    "feature_importance": [
+      {
+        "feature": "Lead time",
+        "importance": 9.9
+      },
+      {
+        "feature": "Parking spaces",
+        "importance": 7.65
+      },
+      {
+        "feature": "Market segment",
+        "importance": 6.72
+      },
+      {
+        "feature": "Special requests",
+        "importance": 5.57
+      },
+      {
+        "feature": "Average daily rate",
+        "importance": 3.25
+      },
+      {
+        "feature": "Customer type",
+        "importance": 3.13
+      },
+      {
+        "feature": "Previous cancellations",
+        "importance": 2.06
+      },
+      {
+        "feature": "Hotel type",
+        "importance": 1.32
+      },
+      {
+        "feature": "Arrival month",
+        "importance": 1.23
+      },
+      {
+        "feature": "Deposit type",
+        "importance": 1.11
+      }
+    ],
+    "trained_at": "2026-10-07 21:55"
+  }
+}

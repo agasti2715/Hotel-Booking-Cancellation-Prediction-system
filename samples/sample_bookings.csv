@@ -1,0 +1,26 @@
+lead_time,adr,deposit_type,is_repeated_guest,previous_cancellations,total_of_special_requests,hotel,market_segment,customer_type,arrival_date_month,stays_in_weekend_nights,stays_in_week_nights,adults,required_car_parking_spaces
+6,100.8,No Deposit,0,0,0,City Hotel,Offline TA/TO,Transient,October,2,1,2,0
+225,107.1,No Deposit,0,0,0,City Hotel,Online TA,Transient,May,0,4,2,0
+31,305.0,No Deposit,0,0,1,Resort Hotel,Groups,Transient-Party,December,0,2,2,0
+6,68.0,No Deposit,0,0,0,City Hotel,Offline TA/TO,Transient,November,2,4,2,0
+304,94.0,Non Refund,0,0,0,Resort Hotel,Groups,Transient,June,2,3,2,0
+10,170.8,No Deposit,0,0,1,City Hotel,Direct,Transient,October,2,3,3,0
+149,139.5,No Deposit,0,0,1,City Hotel,Online TA,Transient,May,0,4,2,0
+263,105.0,No Deposit,0,0,1,City Hotel,Groups,Transient-Party,June,2,2,2,0
+102,135.0,No Deposit,0,0,1,Resort Hotel,Online TA,Transient,April,2,3,2,0
+46,129.45,No Deposit,0,0,1,Resort Hotel,Offline TA/TO,Transient,July,2,5,3,0
+267,62.0,Non Refund,0,0,0,City Hotel,Groups,Transient,March,0,2,2,0
+17,80.0,No Deposit,0,0,0,City Hotel,Corporate,Transient-Party,March,0,2,2,0
+1,98.0,No Deposit,0,0,2,City Hotel,Online TA,Transient,August,2,0,2,0
+1,80.0,No Deposit,1,1,3,City Hotel,Corporate,Transient,January,0,1,1,0
+115,76.0,No Deposit,0,0,0,City Hotel,Offline TA/TO,Transient-Party,February,2,2,1,0
+61,29.0,No Deposit,0,0,0,Resort Hotel,Offline TA/TO,Transient,March,4,10,2,0
+316,110.0,No Deposit,0,0,0,City Hotel,Groups,Transient-Party,May,0,3,2,0
+41,69.29,No Deposit,0,0,0,City Hotel,Groups,Transient-Party,December,2,5,2,0
+1,42.0,No Deposit,1,0,0,Resort Hotel,Corporate,Transient-Party,February,0,2,1,1
+2,66.0,No Deposit,1,0,0,City Hotel,Corporate,Transient-Party,January,0,1,1,0
+135,76.5,No Deposit,0,1,2,City Hotel,Online TA,Transient-Party,July,0,3,2,0
+136,93.08,No Deposit,0,0,0,City Hotel,Online TA,Transient,July,2,2,2,0
+250,114.75,No Deposit,0,0,1,City Hotel,Direct,Transient,July,1,5,2,0
+186,123.0,No Deposit,0,0,1,Resort Hotel,Online TA,Transient,July,0,3,2,0
+0,46.0,No Deposit,0,0,0,Resort Hotel,Direct,Transient,March,0,1,1,1

@@ -1,0 +1,18 @@
+# Python
+backend/.venv/
+__pycache__/
+*.pyc
+
+# Dataset (16 MB) - train_model.py downloads it automatically when missing
+backend/data/
+
+# Node / build output (frontend/.gitignore covers node_modules and dist too)
+node_modules/
+frontend/dist/
+
+# Editor / OS / local tooling
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+.claude/

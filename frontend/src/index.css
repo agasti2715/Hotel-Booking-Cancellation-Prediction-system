@@ -1,0 +1,129 @@
+/* Design tokens and base styles. Component styles live in App.css. */
+
+:root {
+  --bg: #f3f6fa;
+  --surface: #ffffff;
+  --surface-2: #f8fafc;
+  --border: #e3e8ef;
+  --text: #0f172a;
+  --muted: #64748b;
+  --primary: #0f766e;
+  --primary-strong: #115e59;
+  --primary-soft: #e6f6f4;
+  --on-primary: #ffffff;
+  --blue: #2563eb;
+  --ok: #15803d;
+  --ok-soft: #e8f7ee;
+  --ok-line: #bbe5c9;
+  --warn: #b45309;
+  --warn-soft: #fdf4e3;
+  --warn-line: #f5d9a8;
+  --danger: #dc2626;
+  --danger-soft: #fdeeee;
+  --danger-line: #f6c4c4;
+  --hero-1: #0f766e;
+  --hero-2: #0b3b5c;
+  --shadow: 0 1px 2px rgba(15, 23, 42, 0.05), 0 6px 20px rgba(15, 23, 42, 0.06);
+  --shadow-lg: 0 10px 30px rgba(15, 23, 42, 0.12);
+  --radius: 14px;
+  --radius-sm: 9px;
+  color-scheme: light;
+}
+
+:root[data-theme='dark'] {
+  --bg: #0b1120;
+  --surface: #111a2e;
+  --surface-2: #0e1628;
+  --border: #22304a;
+  --text: #e6edf6;
+  --muted: #94a3b8;
+  --primary: #2dd4bf;
+  --primary-strong: #5eead4;
+  --primary-soft: rgba(45, 212, 191, 0.12);
+  --on-primary: #042f2e;
+  --blue: #60a5fa;
+  --ok: #4ade80;
+  --ok-soft: rgba(74, 222, 128, 0.1);
+  --ok-line: rgba(74, 222, 128, 0.3);
+  --warn: #fbbf24;
+  --warn-soft: rgba(251, 191, 36, 0.1);
+  --warn-line: rgba(251, 191, 36, 0.3);
+  --danger: #f87171;
+  --danger-soft: rgba(248, 113, 113, 0.1);
+  --danger-line: rgba(248, 113, 113, 0.3);
+  --hero-1: #115e59;
+  --hero-2: #0c2340;
+  --shadow: 0 1px 2px rgba(0, 0, 0, 0.3), 0 6px 20px rgba(0, 0, 0, 0.25);
+  --shadow-lg: 0 10px 30px rgba(0, 0, 0, 0.45);
+  color-scheme: dark;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  background: var(--bg);
+  color: var(--text);
+  font-family: 'Inter', 'Segoe UI', system-ui, -apple-system, Roboto, 'Helvetica Neue', Arial, sans-serif;
+  font-size: 15px;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  margin: 0;
+  line-height: 1.25;
+  letter-spacing: -0.01em;
+}
+
+p {
+  margin: 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button,
+input,
+select {
+  font: inherit;
+  color: inherit;
+}
+
+button {
+  cursor: pointer;
+}
+
+button:disabled {
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+:focus-visible {
+  outline: 2px solid var(--primary);
+  outline-offset: 2px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}
